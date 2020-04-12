@@ -4,15 +4,16 @@ import styled from "styled-components"
 import { BaseButton } from "./BaseButton"
 
 const StyledButton = styled(BaseButton)`
-  // Inject theme styles here later
+  // theme stuff
 `
 
 export const IconButton = styled(({ icon, ...rest }) => {
   let clone = React.cloneElement(icon, rest)
   return <StyledButton as={clone.type} {...rest} className={rest.className} />
-})
+})``
+//styles
 
-IcontButton.defautlProps = {
+IconButton.defaultProps = {
   size: 24,
 }
 
